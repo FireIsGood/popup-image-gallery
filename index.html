@@ -1,0 +1,91 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <!--=== HTML Meta Tags ===-->
+    <title>Popup Image Gallery</title>
+    <meta name="description" content="An example of a image gallery with popup descriptions" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <!--=== Favicon ===-->
+    <link rel="icon" href="https://fav.farm/🛠️" />
+    <!--=== CDN links ===-->
+    <!--=== Stylesheet ===-->
+    <link rel="stylesheet" href="style.css" />
+    <!--=== Script ===-->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h1>Popup Image Gallery</h1>
+        <p>
+          An example of a popup image gallery. This page uses the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">content template element</a> to
+          easily swap in the text to be visible.
+        </p>
+        <p>The images are sources from <a href="https://placecats.com">Place Cats</a> because cats are good.</p>
+      </section>
+      <section>
+        <p>Here are some images:</p>
+        <ul class="image-list">
+          <li>
+            <figure>
+              <img src="https://placecats.com/neo/300/300" alt="Neo the cat" width="300" height="300" />
+              <figcaption>Neo the cat</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://placecats.com/millie/300/300" alt="Millie the cat" width="300" height="300" />
+              <figcaption>Millie the cat</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://placecats.com/bella/300/300" alt="Bella the cat" width="300" height="300" />
+              <figcaption>Bella the cat</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://placecats.com/millie_neo/300/300"
+                alt="Neo and Millie the cats"
+                width="300"
+                height="300"
+              />
+              <figcaption>Neo and Millie the cats</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://placecats.com/neo_banana/300/300" alt="Neo with a banana" width="300" height="300" />
+              <figcaption>Neo the cat with a banana</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://placecats.com/louie/300/300" alt="Louie the cat" width="300" height="300" />
+              <figcaption>Louie the cat</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container">
+      <p>Made with 🔥 by FireIsGood</p>
+      <p><a href="https://github.com/FireIsGood/popup-image-gallery">Source Code</a></p>
+    </footer>
+    <template id="template-image-dialog">
+      <dialog class="image-dialog">
+        <div class="dialog-inner">
+          <img class="dialog-image" src alt />
+          <p class="dialog-description">Greetings, one and all!</p>
+          <button class="dialog-close">Okay</button>
+        </div>
+      </dialog>
+    </template>
+  </body>
+</html>
